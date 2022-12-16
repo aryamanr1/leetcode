@@ -1,0 +1,9 @@
+if __name__=='__main__':
+    arr=list(map(int,input().split()))
+    freq=dict()
+    x=int(input("enter the difference "))
+    for num in arr:
+        freq[num]=freq.get(num,0)+1
+    for i,j in freq.items():
+        if (i-x) in freq:
+            print(i,j)
